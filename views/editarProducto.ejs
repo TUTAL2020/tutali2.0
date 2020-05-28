@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="/editarProducto.css"rel="stylesheet">
+    <title></title>
+  </head>
+
+
+
+  <body>
+
+
+    <div class="container">
+      <form id="contact" action="/actualizarProducto" method="post">
+        <h3>EDITAR PRODUCTO</h3>
+        <h4>Por favor edite la información del producto</h4>
+        <input  value=" <%=idp%>"  id="idp" type="text"  required disabled="disabled">
+      <input type="text" id="nombreP" name="nombreP" value=" <%=productoE[0].nombreP%> " required>
+      <input type="text" id="precioP" name="precioP"value=" <%=productoE[0].precioP%> " required>
+      <input type="text" id= "cantidadP" name="cantidadP" value=" <%=productoE[0].cantidadP%>" required>
+      <input type="text" id= "descripcionP" name="descripcionP" value=" <%=productoE[0].descripcionP%>" required>
+      <button name="submit" type="submit" id="registrar" ata-submit="...Sending">ACTUALIZAR</button>
+      </form>
+        </div>
+
+    <!--
+    <div class="container">
+  <form id="contact" action="/actualizarProducto" method="post">
+    <h3>EDITAR PRODUCTO</h3>
+    <h4>Por favor edite la información del producto</h4>
+    <fieldset>
+      <input value=" <%=productoE[0]._id%> " id="id" type="text"  disabled="disabled">
+    </fieldset>
+    <fieldset>
+      <input value=" <%=productoE[0].nombreP%> " id="nombreP" type="text">
+    </fieldset>
+    <fieldset>
+      <input value=" <%=productoE[0].precioP%> " id="precioP" type="email">
+    </fieldset>
+    <fieldset>
+      <input value=" <%=productoE[0].cantidadP%>" id="cantidadP" type="tel">
+    </fieldset>
+    <fieldset>
+        <input value=" <%=productoE[0].descripcionP%>" id="descripcionP" type="tel" tabindex="3" required>
+    <fieldset>
+      <button name="submit" type="submit" id="actualizar" data-submit="...Sending">ACTUALIZAR</button>
+    </fieldset>
+  </form>
+
+
+</div>
+-->
+
+  </body>
+</html>

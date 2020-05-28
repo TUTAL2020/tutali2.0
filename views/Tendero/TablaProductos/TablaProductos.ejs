@@ -1,0 +1,28 @@
+
+<% for (var i = 0; i< productos.length; i++){%>
+
+  <div class="flex-item">
+    <div class="product-card">
+      <div class="badge"><%=productos[i].cantidadP%></div>
+      <div class="product-tumb">
+        <img src="<%=productos[i].imagen%>" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory"></span>
+        <h4><a href=""><%=productos[i].nombreP%></a></h4>
+        <p><%=productos[i].descripcionP%></p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small></small>$<%=productos[i].precioP%></div>
+          <div class="product-links">
+
+              <a href="/editar/<%=productos[i]._id%>"><i class="fa fa-edit"></i> </a>
+            <a href="/delete/<%=productos[i]._id%>"><i class="fa fa-times"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+<%}%>

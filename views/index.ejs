@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css"rel="stylesheet">
+    <head>
+    </head>
+    <title>INICIO</title>
+  </head>
+  <body>
+
+      <div class="publicidad">
+        <h5>sacado:</h5>
+        <img src="bf3.gif" alt="">
+
+      </div>
+    <h5><%= usuarioI%></h5>
+
+    <p class="titulo"></p>
+    <a href="/registroTendero" id="registro">REGISTRARSE</a>
+    <div class="cuadradoLogin">
+      <form action="/add" method="post">
+      <input placeholder="USUARIO" id="usuario" type="text" name="usuario" >
+      <input placeholder="CONTRASEÑA" id="contrasena" type="password" name="contrasena">
+      <button id="ingresar">INGRESAR</button>
+      </form>
+      </form>
+
+      <a href="#" id="olvideContrasena">OLVIDE MI CONTRASEÑA</a>
+
+    </div>
+    <script type="text/javascript">
+      document.getElementById('usuario').focus();
+    </script>
+
+  </body>
+  <script src="prueba.js"></script>
+</html>

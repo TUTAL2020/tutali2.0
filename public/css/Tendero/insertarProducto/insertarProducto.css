@@ -1,0 +1,33 @@
+.insertarProductos{
+  width: 1000px;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+
+
+}
+input[type=text] {
+  width: 12%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-color: #3A2E97;
+}
+#registrar{
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: 2px solid #3A2E97;
+}
+input:invalid {
+  border: 2px dashed #150B72;
+}
+
+input:invalid:required {
+
+}
+
+input:valid {
+  border: 2px solid black;
+}
